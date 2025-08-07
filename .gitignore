@@ -1,0 +1,81 @@
+*.txt
+*.xlsx
+*.docx
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cython build artifacts
+*.c
+*.so
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+test-results.xml
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytype
+.pytype/
+
+# Pylint
+pylint-report.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# pyenv
+.python-version
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# ---- VSCode ----
+.vscode/
+.history/
+
+# ---- System ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
+
+# ---- IDE / Editor ----
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---- Optional: Personal configs ----
+*.swp
+*~
