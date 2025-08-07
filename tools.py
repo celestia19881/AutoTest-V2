@@ -15,7 +15,7 @@ mb_app_activity_list = [
 'com.quora.android/com.quora.android.components.activities.LauncherActivity',
 'com.reddit.frontpage/launcher.default',
 'com.linkedin.android/com.linkedin.android.infra.navigation.MainActivity',
-'com.adobe.reader/.AdobeReader',
+'com.adobe.reader/com.adobe.reader.AdobeReader',
 'com.openai.chatgpt/com.openai.chatgpt.MainActivity',
 ]
 
@@ -70,7 +70,7 @@ def open_app(activity_name,output_file=None):
     """
     try:
         # 使用 am start 命令启动应用的主活动
-        cmd = f"adb shell am start -W {activity_name}"
+        cmd = f"adb shell am start -W -n {activity_name}"
         if output_file == None:
             subprocess.run(cmd, shell=True, check=True)
         elif output_file == subprocess.DEVNULL:
@@ -163,8 +163,5 @@ def clean_file_cache():
     
             
 if __name__=='__main__':
-    for activity in gb_app_activity_list:
-        open_app(activity)
-    for activity in mb_app_activity_list:
-        open_app(activity)
+    pass
             

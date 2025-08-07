@@ -42,7 +42,7 @@ class Tee:
 def parse_arguments():
     """解析命令行参数"""
     parser = argparse.ArgumentParser(description="Android 冷启动性能测试脚本")
-    parser.add_argument("--rounds", type=int, default=1, help="测试轮数 (默认: 10)")
+    parser.add_argument("--rounds", type=int, default=10, help="测试轮数 (默认: 10)")
     parser.add_argument("--output", type=str, default="cold_start_results.xlsx", 
                         help="输出 Excel 文件路径 (默认: cold_start_results.xlsx)")
     parser.add_argument("--delay", type=int, default=3, 
